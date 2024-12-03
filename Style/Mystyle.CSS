@@ -1,0 +1,103 @@
+
+@font-face {
+    font-family:"Pacifico" ;
+    src: url(../Fonts/Pacifico/Pacifico-Regular.ttf);
+}
+
+@font-face {
+    font-family:"Righteous" ;
+    src: url(../Fonts/righteous-regular.ttf);
+}
+
+@font-face {
+    font-family:"PT Sans Caption" ;
+    src: url(../Fonts/PT_Sans_Caption/PTSansCaption-Regular.ttf);
+}
+:root{
+    --main-font:"Pacifico";
+    --sec-font:"Righteous";
+    --third-font:"PT Sans Caption";
+    --main-color:rgb(53,46,40);
+    --sec-color:rgb(33,37,41);
+    --third-color:#FFFFFF;
+    --main-bg-color:#F7ECDE;
+    --sec-bg-color:rgb(187,65,32);
+}
+body{
+    background-color: var(--main-bg-color);
+}
+.container h1{
+    font-family:var(--main-font) ;
+    font-weight: 500;
+    font-size: 50px;
+    color:var(--main-color);
+    padding-top: 60px;
+    padding-bottom: 100px;
+}
+.dotted-line {
+    border-top: 2px dotted black; 
+    width: 100%; 
+    margin: 50px 0; 
+}
+.container h2{
+    font-family: var(--sec-font);
+    font-weight: 500;
+    font-size: 25px;
+    color:var(--sec-color);
+    background-image: linear-gradient(to right, #3ca55c, #b5ac49);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.container label{
+    font-family: var(--third-font);
+    font-weight: 600;
+    font-size: 26px;
+    color:var(--sec-color);
+}
+.container input{
+    font-family: var(--third-font);
+    font-weight: 400;
+    font-size: 26px;
+    color:var(--sec-color);
+}
+.container button{
+    font-family: var(--third-font);
+    font-weight: 400;
+    font-size: 26px;
+    color:var(--third-color);
+    background:var(--sec-bg-color);
+    padding-block: 8px;
+    padding-inline: 60px;
+}
+.container button:hover{
+    color:var(--third-color);
+    background:var(--sec-bg-color);
+}
+.table th{
+    font-family: var(--third-font);
+    font-weight: 700;
+    font-size: 26px;
+    color:var(--sec-color);
+}
+.table td{
+    font-family: var(--third-font);
+    font-weight: 400;
+    font-size: 26px;
+    color:var(--sec-color);
+}
+
+#tbody a{
+    background-color: rgb(138,158,35); 
+    color:var(--third-color);
+}
+#tbody a:hover{
+    color:var(--third-color);
+}
+#tbody button{
+    background-color: #D30820;
+    color:var(--third-color);
+}
+#tbody button:hover{
+    color:var(--third-color);
+}
+
